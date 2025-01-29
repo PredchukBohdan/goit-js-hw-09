@@ -1,0 +1,34 @@
+.gallery-section .gallery {
+  max-width: 1176px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.gallery-section .gallery-item {
+  flex-basis: 100%;
+}
+.gallery-section .gallery-link {
+  cursor: url('/img/bxs_hand-down.svg'), auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: cursor 0.3s ease;
+}
+
+.gallery-section .gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .gallery-section .gallery-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .gallery-section .gallery-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+}
