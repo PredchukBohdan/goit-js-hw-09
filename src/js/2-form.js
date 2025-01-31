@@ -4,6 +4,8 @@ let formData = {
 };
 export default (() => {
   const form = document.querySelector('.feedback-form');
+  if (!form) return;
+
   const { email, message } = form.elements;
   const localStorageKey = 'feedback-form-state';
 
