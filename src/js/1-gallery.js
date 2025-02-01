@@ -65,7 +65,7 @@ const images = [
     description: 'Lighthouse Coast Sea',
   },
 ];
-export default (() => {
+(() => {
   const galeryWrapper = document.querySelector('ul.gallery');
   const imageElements = images?.map(({ preview, original, description }) => {
     return `<li class="gallery-item"> 

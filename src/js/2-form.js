@@ -2,7 +2,7 @@ let formData = {
   email: '',
   message: '',
 };
-export default (() => {
+(() => {
   const form = document.querySelector('.feedback-form');
   if (!form) return;
 
